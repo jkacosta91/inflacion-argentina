@@ -13,13 +13,14 @@ Incluye procesos de:
 
 ## 📁 Estructura del proyecto
 
-```
+```plaintext
 inflacion-argentina/
-├── data/            # Datos crudos y limpios
+├── data/            # Datos crudos y procesados (.csv)
 ├── notebooks/       # Exploraciones y notebooks de análisis
-├── src/             # Código principal
-│   ├── etl/         # Extracción y limpieza
-│   ├── models/      # Modelos predictivos
+├── src/
+│   ├── etl/         # Extracción y limpieza de datos (ETL)
+│   │   └── ipc_ingest.py      # Script para obtener series desde archivo_series.csv
+│   └── models/      # Modelos predictivos
 │   └── utils/       # Funciones auxiliares
 ├── reports/         # Visualizaciones, reportes de resultados
 ├── requirements.txt

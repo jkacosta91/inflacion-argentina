@@ -1,5 +1,15 @@
+# Entorno virtual
 venv/
+.env
+
+# Python cache
 __pycache__/
-*.pyc
-*.ipynb_checkpoints
+*.py[cod]
+*.egg-info/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Archivos de sistema
 .DS_Store
+Thumbs.db
